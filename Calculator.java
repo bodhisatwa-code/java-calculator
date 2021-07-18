@@ -47,16 +47,17 @@ public class Calculator {
         switch(choice){
             case 1 : 
                 System.out.println("The total is : " + addNumbers());
+                scanner.close();
                 break;
             case 2 :
                 System.out.println("The substraction result is : " + substractNumbers());
+                scanner.close();
                 break;
             default:
                 System.out.println("Something went wrong");
+                scanner.close();
                 break;
         }
-        double total = addNumbers();
-        System.out.println("The total is : " + total );
-        scanner.close();
+        
     }
 }
